@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI = "mongodb://localhost:27017/?directConnection=true"
+const mongoURI = "mongodb://localhost:27017/inotebook?directConnection=true"//before ? i can add the database name
 // make two constant and then make a function and execute the two constant and then export that function to the main index.js 
 
 const connectToMongo = () => {
