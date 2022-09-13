@@ -1,7 +1,13 @@
 const mongoose = require('mongoose');//check the docs written from there
+const { Schema } = mongoose;
 
 
 const NotesSchema = new Schema({
+    user: {
+        type: mongoose.Schema.Types.ObjectId,//thiss is like a foreingn key to this database to fetch the notes
+        ref: 'user'
+    },
+
     title: {
         type: String,
         required: true
@@ -16,7 +22,7 @@ const NotesSchema = new Schema({
     },
     date: {
         type: Date,
-        default: date.now
+        default: Date.now
     }
 
 

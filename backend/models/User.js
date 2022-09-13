@@ -24,6 +24,6 @@ const UserSchema = new Schema({
 
 });
 const user = mongoose.model('user', UserSchema);
-user.createIndexes();//this will help to check whether no duplicate entry are been used
+//this will help to check whether no duplicate entry are been used
 
 module.exports = user; //these are all the heading of the table in which the data will be stored
